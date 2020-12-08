@@ -8,9 +8,9 @@
 
 ![api_rest](https://img.olx.com.br/thumbs256x256/46/460907089924160.jpg)
 
-:exclamation: Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com a pandemia os casos se agravaram. Com isso, os profissionais de Psicologia ganharam destaque e se mostraram essenciais no apoio de situações como depressão, fobias, ansiedade, luto, entre outros. Contudo, mesmo quando alguém decide buscar tratamento, encontrar e ter condições de pagar a psicoterapia pode ser desencorajador. 
+Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com a pandemia os casos se agravaram. Com isso, os profissionais de Psicologia ganharam destaque e se mostraram essenciais no apoio de situações como depressão, fobias, ansiedade, luto, entre outros. Contudo, mesmo quando alguém decide buscar tratamento, encontrar e ter condições de pagar a psicoterapia pode ser desencorajador. 
 
-:purple_heart: Diante desse cenário, foi criada a API Psicoterapia para todes que armazena dados de instituições que oferecem serviço de psicoterapia gratuito. Assim, qualquer usuárie pode ```cadastrar```, ```atualizar``` e ```excluir``` dados, para que uma pessoa, que esteja precisando de atendimento psicológico e não tenha condições financeiras, consiga ```acessá-los``` e possa buscar apoio para cuidar da sua saúde mental.
+:purple_heart: Diante desse cenário, foi criada a **API Psicoterapia para todes** que armazena dados de instituições que oferecem serviço de psicoterapia gratuito. Assim, qualquer usuárie pode ```cadastrar```, ```atualizar``` e ```excluir``` dados, para que uma pessoa, que esteja precisando de atendimento psicológico e não tenha condições financeiras, consiga ```acessá-los``` e possa buscar apoio para cuidar da sua saúde mental.
 
 ### Instruções para usar a API
 
@@ -45,11 +45,11 @@
 
 ### Rotas
 
-|                Endpoint                | Verbo  |                        Descrição                         |
-| -------------------------------------- | ------ | -------------------------------------------------------- |
-| `/instituicoes`                        | GET    | Retorna todas as instituições                            |
-| `/instituicoes/:state `                | GET    | Retorna as instituições por estado                       |
-| `/instituicoes/:state/activeService `  | GET    | Retorna as instituições com serviço ativo por estado     |
-| `/instituicoes`                        | POST   | Inclui nova instituição                                  |
-| `/instituicoes/:id`                    | PUT    | Atualiza uma instituição por id                          |
-| `/instituicoes/:id`                    | DELETE | Remove uma instituição por id                            |
+|                  Rota                  | Método  |                        Descrição                         |
+| -------------------------------------- | ------- | -------------------------------------------------------- |
+| `/institutions`                        | GET     | Retorna todas as instituições                            |
+| `/institutions/:state `                | GET     | Retorna as instituições por estado                       |
+| `/institutions/:state/activeService `  | GET     | Retorna as instituições com serviço ativo por estado     |
+| `/institutions`                        | POST    | Inclui nova instituição                                  |
+| `/institutions/:id`                    | PUT     | Atualiza uma instituição por id                          |
+| `/institutions/:id`                    | DELETE  | Remove uma instituição por id                            |
