@@ -8,47 +8,48 @@
 
 ![api_rest](https://img.olx.com.br/thumbs256x256/46/460907089924160.jpg)
 
-:purple_heart: Psicoterapia para todes é uma API que armazena dados de instituições e profissionais que oferecem serviço de psicoterapia gratuito. Assim, qualquer usuárie pode cadastrar e atualizar dados, para que uma pessoa, que esteja precisando de atendimento psicológico e não tenha condições financeiras, consiga acessá-los e possa buscar apoio para cuidar da sua saúde mental.
+:exclamation: Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com a pandemia os casos se agravaram. Com isso, os profissionais de Psicologia ganharam destaque e se mostraram essenciais no apoio de situações como depressão, fobias, ansiedade, luto, entre outros. Contudo, mesmo quando alguém decide buscar tratamento, encontrar e ter condições de pagar a psicoterapia pode ser desencorajador. 
 
-### Para usar a API
+:purple_heart: Diante desse cenário, foi criada a API Psicoterapia para todes que armazena dados de instituições que oferecem serviço de psicoterapia gratuito. Assim, qualquer usuárie pode ```cadastrar```, ```atualizar``` e ```excluir``` dados, para que uma pessoa, que esteja precisando de atendimento psicológico e não tenha condições financeiras, consiga ```acessá-los``` e possa buscar apoio para cuidar da sua saúde mental.
+
+### Instruções para usar a API
 
 - [x] Instalar Node.js e MongoDB
-- [x] Criar um Fork desse repositório no seu GitHub
+- [x] Criar um fork desse repositório no seu GitHub
 - [x] Clonar seu repositório para sua máquina local (git clone)
 - [x] Entrar na pasta (cd psicoterapia-para-todes)  
 - [x] Baixar os módulos e instalá-los no package.json (npm install)
 - [x] Iniciar o server (npm start)
-- [x] Executar na porta 8080 (http://localhost:8080/)
-
-### Estrutura da API
-
-```
-reprograma-projeto-final
-├── src
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   └── app.js
-├── server.js
-├── package.json
-```
+- [x] Executar na porta 8080 (Postman e Heroku)
 
 ### Estrutura do banco de dados
 
 ```
-{ id, nome, endereco, cidade, siglaEstado, telefone, email, site, abordagem, statusInstituicao }
+{ id, name, address, city, state, telephone, email, site, activeService }
+```
+
+**Exemplo:**
+```
+{
+    "id": 1 (dinâmico - não infomrar),
+    "name": "FACHO - Faculdade de Ciências Humanas de Olinda",
+    "address": "ROD PE 015 - Jatobá - CEP: 53060-775",
+    "city": "Recife",
+    "state": "PE",
+    "telephone": "(81) 3087-0071",
+    "email": "facho@facho.br",
+    "site": "https://www.facho.br/clinica",
+    "activeService": true
+}
 ```
 
 ### Rotas
 
-|               Rota              | Método |                   Descrição                    |
-| ------------------------------- | ------ | ---------------------------------------------- |
-| `/psicoterapia`                 | GET    | Retorna todos os registros                     |
-| `/psicoterapia/instituicoes`    | GET    | Retorna o nome de todas as instituicoes        |
-| `/psicoterapia/profissionais`   | GET    | Retorna o nome de todes profissionais          |
-| `/psicoterapia/:estado`         | GET    | Retorna todos os registros por estado          |
-| `/psicoterapia/:estado/:cidade` | GET    | Retorna todos os registros por estado e cidade |
-| `/psicoterapia`                 | POST   | Inclui novos registros                         |
-| `/psicoterapia/:nome`           | PUT    | Altera dados do registro                       |
-| `/psicoterapia/:nome`           | PATCH  | Altera status do registro                      |
-| `/psicoterapia/:nome`           | DELETE | Remove registro por nome                       |
+|                Endpoint                | Verbo  |                        Descrição                         |
+| -------------------------------------- | ------ | -------------------------------------------------------- |
+| `/instituicoes`                        | GET    | Retorna todas as instituições                            |
+| `/instituicoes/:state `                | GET    | Retorna as instituições por estado                       |
+| `/instituicoes/:state/activeService `  | GET    | Retorna as instituições com serviço ativo por estado     |
+| `/instituicoes`                        | POST   | Inclui nova instituição                                  |
+| `/instituicoes/:id`                    | PUT    | Atualiza uma instituição por id                          |
+| `/instituicoes/:id`                    | DELETE | Remove uma instituição por id                            |
