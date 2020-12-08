@@ -1,0 +1,26 @@
+{
+  "name": "psicoterapia-para-todes",
+  "version": "1.0.0",
+  "description": "![api_rest](https://br.digitalhouse.com/wp-content/uploads/2018/05/reprograma-fundos-claros-360x99.png)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelascv/psicoterapia-para-todes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelascv/psicoterapia-para-todes/issues"
+  },
+  "homepage": "https://github.com/marcelascv/psicoterapia-para-todes#readme"
+}
