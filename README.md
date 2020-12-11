@@ -21,8 +21,8 @@ Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com
 - [x] Baixar os módulos e instalá-los no package.json (npm install)
 - [x] Iniciar o server (npm start)
 - [x] Executar na porta 8080
-- [x] Link collections Postman https://www.getpostman.com/collections/a572251c916b492ea11b
-- [x] Link Heroku https://psicoterapia-para-todes.herokuapp.com/
+- [x] Link collections Postman [Clique aqui](https://www.getpostman.com/collections/a572251c916b492ea11b)
+- [x] Link Heroku [Clique Aqui](https://psicoterapia-para-todes.herokuapp.com/)
 
 ### Estrutura do banco de dados
 
