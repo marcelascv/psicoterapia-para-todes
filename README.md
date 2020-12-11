@@ -1,6 +1,6 @@
 # Projeto Final
 
-![api_rest](https://br.digitalhouse.com/wp-content/uploads/2018/05/reprograma-fundos-claros-360x99.png)
+![api_rest](https://br.digitalhouse.com/wp-content/uploads/2018/05/reprograma-fundos-claros-360x99.png) ![api_rest](https://images.even3.com.br/3zfJQIzmiSPFNxYNTh3BgYObYIE=/fit-in/250x250/smart/even3.blob.core.windows.net/logos/ngpd_minas_marca_A1_v2.19ccb37b296449b9bc05.png)
 
 :wave: Oi, sou Marcela Vasconcelos aluna do bootcamp da Reprograma na turma online 7 de Backend em parceria com o MINAs do Porto Digital. Seja muito bem-vinde ao meu projeto final do curso e se sinta incluíde para colaborar com ele.
 
@@ -20,7 +20,9 @@ Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com
 - [x] Entrar na pasta (cd psicoterapia-para-todes)  
 - [x] Baixar os módulos e instalá-los no package.json (npm install)
 - [x] Iniciar o server (npm start)
-- [x] Executar na porta 8080 (Postman e Heroku)
+- [x] Executar na porta 8080
+- [x] Link collections Postman https://www.getpostman.com/collections/a572251c916b492ea11b
+- [x] Link Heroku https://psicoterapia-para-todes.herokuapp.com/
 
 ### Estrutura do banco de dados
 
@@ -31,7 +33,7 @@ Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com
 **Exemplo:**
 ```
 {
-    "id": 1 (dinâmico - não infomrar),
+    "id": 1 (DINÂMICO - NÃO INFORMAR),
     "name": "FACHO - Faculdade de Ciências Humanas de Olinda",
     "address": "ROD PE 015 - Jatobá - CEP: 53060-775",
     "city": "Recife",
