@@ -12,6 +12,36 @@ Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com
 
 :purple_heart: Diante desse cenário, foi criada a **API Psicoterapia para todes** que armazena dados de instituições que oferecem serviço de psicoterapia gratuito. Assim, qualquer usuárie pode ```cadastrar```, ```atualizar``` e ```excluir``` dados, para que uma pessoa, que esteja precisando de atendimento psicológico e não tenha condições financeiras, consiga ```acessá-los``` e possa buscar apoio para cuidar da sua saúde mental.
 
+### Tecnologia
+
+*Git Hub
+*Git Bash
+*VS Code
+*Node.js
+*MongoDB
+*Postman
+*Heroku
+
+### Estrutura da API
+
+```
+PSICOTERAPIA-PARA-TODES
+├── node_modules
+├── src
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── app.js
+├── .env
+├── .env.example
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── Procfile
+├── README.md
+├── server.js
+```
+
 ### Instruções para usar a API
 
 - [x] Instalar Node.js e MongoDB
