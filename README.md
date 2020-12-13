@@ -14,13 +14,13 @@ Nos últimos anos, as doenças psicológicas estão crescendo na sociedade e com
 
 ### Tecnologia
 
-*Git Hub
-*Git Bash
-*VS Code
-*Node.js
-*MongoDB
-*Postman
-*Heroku
+* GitHub
+* Git Bash
+* VSCode
+* Node.js
+* MongoDB
+* Postman
+* Heroku
 
 ### Estrutura da API
 
